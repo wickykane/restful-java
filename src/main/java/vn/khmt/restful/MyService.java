@@ -24,7 +24,7 @@ public class MyService {
         return Response.status(200).entity(out).build();
     }
      //Example:http://localhost:8080/restful/DoubleH/Add/15+huy+123+huy@gmail.com+1+huy
-     @GET
+     @POST
      @Path("Add/{id}+{username}+{password}+{email}+{status}+{name}")
     public Response Insert(@PathParam("id") int id,@PathParam("username") String username, @PathParam("password") String password,
             @PathParam("email") String email, @PathParam("status") int status, @PathParam("name") String name) {
